@@ -72,13 +72,11 @@ body {
 .container .messages .letter {
   position: relative;
   width: 80vw;
-  height: 20vh;
+  height: 25vh;
   margin-bottom: 8vh;
-  background: #252525;
-  border-radius: 5px;
   -webkit-filter: drop-shadow(10px 9px 4px black);
-          filter: drop-shadow(10px 9px 4px black);
-  border: 1px solid whitesmoke;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 5px;
 }
 
 .container .messages .letter svg {
@@ -95,7 +93,8 @@ body {
   font-family: Arial;
   font-style: normal;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 18px;
+  line-height: 21px;
   letter-spacing: 0.05em;
   font-variant: small-caps;
   color: #000000;
@@ -108,12 +107,10 @@ body {
 
 .container .messages .links {
   width: 80vw;
-  height: 20vh;
-  background: #252525;
+  height: 25vh;
+  background: rgba(112, 102, 102, 0.19);
   -webkit-filter: drop-shadow(10px 9px 4px black);
-          filter: drop-shadow(10px 9px 4px black);
   border-radius: 5px;
-  border: 1px solid whitesmoke;
 }
 
 .container .messages .links svg {
@@ -175,3 +172,32 @@ body {
   top: -0.1rem;
 }
 /*# sourceMappingURL=platoonthanks.css.map */
+@media only screen and (max-width: 600px) {
+  .container {
+      width: 95%;
+  }
+}
+.letter, .links{
+   animation: textup 20s linear infinite; 
+  transform: translateY(200px);
+}
+@keyframes textup{
+5%{
+    transform: translateY(0px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+.slider{
+    animation: imageup 20s linear infinite; 
+    transform: translateX(200px);
+  }
+@keyframes imageup{
+5%{
+    transform: translateY(0px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
