@@ -1,0 +1,177 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  background: #252525;
+  border: 1px solid black;
+}
+
+.container .slider {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background: chartreuse;
+}
+
+.container .slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .messages {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .messages .letter {
+  position: relative;
+  width: 80vw;
+  height: 20vh;
+  margin-bottom: 8vh;
+  background: #252525;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(10px 9px 4px black);
+          filter: drop-shadow(10px 9px 4px black);
+  border: 1px solid whitesmoke;
+}
+
+.container .messages .letter svg {
+  position: relative;
+  left: 0.2rem;
+  top: 0.2rem;
+}
+
+.container .messages .letter p {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+.container .messages .letter p a, .container .messages .letter p b {
+  color: #FF0000;
+  cursor: pointer;
+}
+
+.container .messages .links {
+  width: 80vw;
+  height: 20vh;
+  background: #252525;
+  -webkit-filter: drop-shadow(10px 9px 4px black);
+          filter: drop-shadow(10px 9px 4px black);
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+
+.container .messages .links svg {
+  position: relative;
+  left: 0.2rem;
+  top: 0.2rem;
+}
+
+.container .messages .links .uni {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .messages .links .uni a {
+  display: block;
+  color: #000000;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 21px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.container .messages .links .uni a:hover {
+  color: #FF0000;
+}
+
+.container .messages .links .uni a svg {
+  position: relative;
+  top: 0.6rem;
+}
+
+.container .playbtn {
+  width: 15vw;
+  height: 15vw;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 1.5rem;
+  top: 26%;
+  z-index: +9999;
+}
+
+.container .playbtn svg {
+  position: relative;
+  left: 0.3em;
+  top: -0.1rem;
+}
+/*# sourceMappingURL=platoonthanks.css.map */
